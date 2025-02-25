@@ -9,6 +9,7 @@ body {
   padding-top: 80px;
   line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
 }
 
 #header {
@@ -64,6 +65,7 @@ section {
 #video {
   max-width: 100%;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .price-cards {
@@ -119,6 +121,10 @@ ul {
 #contact a {
   text-decoration: none;
   color: #333;
+}
+
+footer {
+  padding: 10px;
 }
 
 @media (max-width: 768px) {
