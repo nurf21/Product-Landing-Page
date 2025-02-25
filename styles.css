@@ -91,12 +91,12 @@ section {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transform: translateY(-5px);
-  transition: all 0.3s ease;
 }
 
 ul {
@@ -181,7 +181,7 @@ footer {
 
   #video {
     width: 100%;
-}
+  }
 
   .price-cards {
     gap: 20px;
