@@ -58,6 +58,8 @@ section {
 
 .video-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 40px 0;
 }
@@ -66,6 +68,11 @@ section {
   max-width: 100%;
   object-fit: cover;
   border-radius: 8px;
+  margin-top: 20px;
+}
+
+#pricing-title {
+  text-align: center;
 }
 
 .price-cards {
@@ -73,6 +80,7 @@ section {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .card {
@@ -125,6 +133,7 @@ ul {
 
 footer {
   padding: 10px;
+  text-align: end;
 }
 
 @media (max-width: 768px) {
