@@ -134,7 +134,7 @@ footer {
   }
 
   #nav-bar {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 10px;
   }
@@ -144,7 +144,36 @@ footer {
   }
 
   #video {
-      width: 100%;
-      height: auto;
+      width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  .video-container {
+    margin: 20px 0;
+  }
+
+  #video {
+    width: 100%;
+}
+
+  .price-cards {
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 200px;
+  }
+
+  #form {
+    margin: 20px 0;
+  }
+
+  #email {
+    width: 250px;
   }
 }
