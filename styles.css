@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --border-color: #ddd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +28,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: var(--background-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -37,13 +45,13 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: var(--primary-color);
 }
 
 main {
@@ -90,12 +98,12 @@ section {
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 
@@ -110,21 +118,21 @@ ul {
   gap: 15px;
   margin: 40px 0;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #email {
   padding: 10px;
   width: 300px;
-  border: 2px solid #007bff;
+  border: 2px solid var(--primary-color);
   border-radius: 4px;
 }
 
 #submit {
   padding: 10px 30px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 4px;
@@ -134,7 +142,7 @@ ul {
 }
 
 #submit:hover {
-  background-color: #0056b3;
+  background-color: var(--secondary-color);
 }
 
 #contact a {
@@ -145,28 +153,28 @@ ul {
 footer {
   padding: 10px;
   text-align: end;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
   #header {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   #nav-bar {
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
   .price-cards {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   #video {
-      width: 75%;
+    width: 75%;
   }
 }
 
